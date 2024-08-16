@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Google Fonts link tags -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS styles */
+        body {
+            font-family: 'Source Code Pro', Arial, sans-serif; /* Apply Google Font */
+            background-color: #101935;
+            color: #0b132b;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+ 
+        h1 {
+            text-align: left;
+            font-size: 20px;
+            color: #087E8B;
+        }
+
+        .header-text {
+            color: #A0B0E3;;
+            text-align: left;
+            font-size: 70px;
+            font-weight: bold;
+        }
+
+        .subheader-text {
+            color: #6172A9;            
+            text-align: left;
+            font-size: 55px;
+         }
+
+        h2 {
+            color: #088b4a;
+            font-size: 10px;
+            text-align: right;
+         }
+
+
+
+        .link-container {
+            text-align: right;
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center; 
+            padding-top: 20px;
+        }
+
+        .link-numbers {
+            text-decoration: none;
+            color: #087E8B;
+            cursor: pointer;
+            margin: 0 10px; 
+            font-size: 14px; 
+            line-height: 1; /* ok hopefully theyre all on the same line now */
+            display: inline-block;
+        }
+
+        .link-button:hover {
+            text-decoration: none;
+            color: #087E8B;
+            cursor: pointer;
+        }
+
+        .link-button {
+            text-decoration: none;
+            color: whitesmoke;
+            cursor: pointer;
+            margin: 0 10px; 
+            font-size: 14px; 
+            line-height: 1;
+            display: inline-block; 
+        }
+        
+        .btn-outline {
+            width: 10%;
+            border-color: #087E8B;
+            color: #087E8B;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+            font-size: 16px; 
+        }
+
+        .btn-outline:hover,
+        .btn-outline:active {
+            border-color: #087E8B;
+            color: #A0B0E3;
+            background-color: #087E8B;
+        }
+    
+        .container {
+            padding-top: 10%;
+            display: flex;
+            flex-direction: column; 
+            align-items: left;
+            height: 90vh; 
+        }
+ 
+    </style>
+
+    <title>Landing Page</title>
+</head>
+<body>
+    <div class ='link-container'>
+        <h3 class="link-numbers">01.</h3>
+        <a href="/front-end/about-page.html" class = "link-button">About</a>
+        <h3 class="link-numbers"> 02.</h3>
+        <a href="/front-end/experience-page.html" class = "link-button">Experience</a>
+        <h3 class="link-numbers"> 03.</h3>
+        <a href="/front-end/resume.html" class = "link-button">Resume</a>
+        <h3 class="link-numbers"> 04.</h3>
+        <a href="/front-end/contact-page.html" class = "link-button">Contact Me</a>
+    </div>
+    <div class ="container">
+        <h1>Hi, my name is</h1>
+        <div class="header-text">Emily Madsen.</div>
+        <div class="subheader-text"> I'm A Developing Computer Scientist.</div>
+        <!-- <h1></h1> -->
+    </div>
+
+   
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/experience-page.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+    font-family: 'Source Code Pro', Arial, sans-serif; /* Apply Google Font */
+    background-color: #101935;
+    color: #0b132b;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+.link-container {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    padding-top: 20px;
+}
+
+.link-numbers {
+    text-decoration: none;
+    color: #087E8B;
+    cursor: pointer;
+    margin: 0 10px; 
+    font-size: 14px; 
+    line-height: 1; /* ok hopefully theyre all on the same line now */
+    display: inline-block;
+}
+
+.link-button:hover {
+    text-decoration: none;
+    color: #087E8B;
+    cursor: pointer;
+}
+
+.link-button {
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+    margin: 0 10px; 
+    font-size: 14px; 
+    line-height: 1;
+    display: inline-block; 
+}
+
+.top-container {
+    text-align: right;
+    display: flex;
+    justify-content:center; 
+    align-items: center; 
+    padding-top: 20px;
+    margin: 0; /* Ensure no margin affects spacing */
+    line-height: 1; /* Ensure consistent line height */
+}
+
+.top-container-numbers {
+    text-decoration: none;
+    color: #087E8B;
+    cursor: pointer;
+    margin: 0 10px; 
+    font-size: 18px; 
+    line-height: 1; /* ok hopefully theyre all on the same line now */
+    display: inline-block;
+    
+}
+
+.top-container-words {
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+    margin: 0 10px; 
+    font-size: 18px; 
+    line-height: 1; /* ok hopefully theyre all on the same line now */
+    display: inline-block;
+}
+h3{
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+header {
+    text-align: center;
+    color: #A0B0E3;
+    font-size: 60px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+.picture-left-container {
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-bottom: 20px;
+    
+}
+
+.picture-right-container {
+    flex-direction: row;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding-top: 20px;
+    padding-right: 15%;
+    padding-bottom: 10px;
+    
+}
+
+img {
+    width: 500px; 
+    height: 250px;
+    object-fit: cover; /* Ensure the image covers the entire space */
+    object-position: center;
+    filter: sepia(100%) hue-rotate(140deg) saturate(100%);
+}
+
+img:hover {
+    filter: grayscale(0%); /* Make the image color */
+    filter: sepia(0%); /* Make the image sepia */
+    filter: hue-rotate(0deg); /* Rotate the hue of the image */
+    
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+    padding: 20px; /* Optional: Add some padding */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+
+
+.word-container-left{
+    display: flex;
+    font-size: 15px;
+    text-align: right;
+    padding-left: 5%;
+    padding-right: 18%;
+    flex-direction: column;
+}
+
+
+.p-for-left{
+    color: #A0B0E3;
+    margin: 0;
+    padding: 0;
+}
+
+.p-for-right{
+    display: flex;
+    font-size: 15px;
+    color: #A0B0E3;
+    text-align: left;
+    padding-left: 17.5%;
+    padding-right: 5%;
+}
+
+a{
+    color: #087E8B;
+    text-decoration: none;
+}
+
+.github-logo{ 
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-top: 10px;
+    color: white;
+}
+
+.external-link-logo{ 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+    filter: invert(100%);
+}
+
+
+
+.link-icons{
+    display: flex;
+    justify-content: center; /* Centers logos horizontally */
+    align-items: center; /* Centers logos vertically */
+    flex-direction: row;
+    line-height: 1;
+}
+    </style>
+    <title>Experience</title>
+</head>
+<body>
+    <div class="link-container">
+        <h3 class="link-numbers"> 01.</h3>
+        <a href="/" class = "link-button">Home</a>
+        <h3 class="link-numbers"> 02.</h3>
+        <a href="resume" class = "link-button">Resume</a>
+        <h3 class="link-numbers"> 03.</h3>
+        <a href="contact-page" class = "link-button">Contact Me</a>
+
+    </div>
+    <div class="center-container">
+        <div class="top-container">
+            <h3 class="top-container-numbers"> 02.</h3>
+            <h3 class = "top-container-words"> Experience</h3>
+        </div>
+        <div>
+            <header> Let's Talk Experience </header>
+        </div>
+        <div class="picture-left-container">
+            <a href="https://github.com/emadsen114/StudyHub"><img class="img-left" src="/images/studyhub.png" alt="StudyHub Photo" ></a>
+            <div class="word-container-left">
+                <p class="title">StudyHub</p>
+                <p class="p-for-left"> StudyHub is a student-based site created to provide a safe and accessible educational platform for college students. <br> <br>Built with VS Code MongoDB Express Node.js </p>
+                <div class="link-icon">
+                    <a href="https://github.com/emadsen114/StudyHub"><img class= "github-logo" src="/images/github-logo.png" alt="github"></a>></a>
+                    <!-- TO REDIRECT TO LAUNCHED SITE --> 
+                     <a href="https://github.com/emadsen114/StudyHub"><img class= "external-link-logo" src="/images/external-link.svg" alt="externam link"></a>></a> 
+    
+                </div>
+                
+            </div>
+        </div>
+        <div class="picture-right-container">
+            <p class="p-for-right">HEllo hellos helllo  ef we fw ef w efw ef we fwe f wef we fwe fw fw efw ef wef wef we fw ef wef we f wef we fw ef we fw ef we fw ef wef weeeeeeeeeeeeeeeeeeeewef  wefwwwwwwwwwww we ee</p>
+            <img class = "img-left"src="/images/studyhub.png" alt="StudyHub Photo">
+        </div>
+        <div class="picture-left-container">
+            <img class = "img-left"src="/images/studyhub.png" alt="StudyHub Photo">
+            <div class="word-container-left">
+                <p class="title">StudyHub</p>
+                <p class="p-for-left"> StudyHub is a student-based site created to provide a safe and accessible educational platform for college students. <br> <br> Built with VS Code MongoDB Express Node.js </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
